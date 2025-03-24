@@ -287,28 +287,17 @@
     });
   }
   
-$(document).ready(function () {
-    $('.toggle-pdf').click(function (event) {
-        event.preventDefault(); // Ngăn hành vi mặc định của thẻ <a>
-
-        var pdfContainer = $(this).next('.pdf-container');
-
-        console.log('Before click:', pdfContainer.is(':visible')); // Kiểm tra trạng thái trước khi click
-
-        if (!pdfContainer.is(':visible')) {
-            $('.pdf-container').slideUp('slow'); // Đóng tất cả các container khác trước
-            $('.toggle-pdf').removeClass('open'); // Xóa trạng thái "mở" của tất cả các nút
-            
-            pdfContainer.stop(true, true).slideDown('slow'); // Ngăn chồng animation và mở lên
-            $(this).addClass('open');
-        } else {
-            pdfContainer.stop(true, true).slideUp('slow');
-            $(this).removeClass('open');
-        }
-
-        console.log('After click:', pdfContainer.is(':visible')); // Kiểm tra trạng thái sau khi click
-    });
-});
+$(document).ready(function() {
+     $('.toggle-pdf').click(function() {
+         var pdfContainer = $(this).next('.pdf-container');
+         $(this).toggleClass('open'); // Thêm class khi click để xoay mũi tên
+         if (pdfContainer.is(':hidden')) {
+             pdfContainer.slideDown('slow');
+         } else {
+             pdfContainer.slideUp('slow');
+         }
+     });
+ });
 
 
 })();
