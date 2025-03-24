@@ -289,20 +289,20 @@
   
 $(document).ready(function() {
     $('.toggle-pdf').click(function(event) {
-        event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ a (nếu có)
+        event.preventDefault(); // Ngăn hành vi mặc định
 
         var pdfContainer = $(this).next('.pdf-container');
 
-        // Kiểm tra xem có đang mở hay không
+        // Kiểm tra nếu nó đang ẩn thì hiển thị, ngược lại thì ẩn đi
         if (!pdfContainer.is(':visible')) {
-            $('.pdf-container').slideUp('slow'); // Đóng tất cả các PDF khác trước khi mở
-            $('.toggle-pdf').removeClass('open'); // Loại bỏ class 'open' khỏi tất cả các nút
+            $('.pdf-container').slideUp('slow'); // Đóng tất cả trước khi mở
+            $('.toggle-pdf').removeClass('open'); // Xóa class của tất cả các nút
 
-            pdfContainer.slideDown('slow');
-            $(this).addClass('open'); // Thêm class cho nút đang mở
+            pdfContainer.stop(true, true).slideDown('slow'); // Ngăn chặn animation cũ trước khi mở
+            $(this).addClass('open');
         } else {
-            pdfContainer.slideUp('slow');
-            $(this).removeClass('open'); // Loại bỏ class khi đóng
+            pdfContainer.stop(true, true).slideUp('slow'); // Ngăn chồng animation
+            $(this).removeClass('open');
         }
     });
 });
