@@ -292,15 +292,18 @@ $(document).ready(function () {
         event.preventDefault();
         var pdfContainer = $(this).next('.pdf-container');
 
-        // Kiểm tra trạng thái hiển thị
-        if (pdfContainer.is(':visible')) {
-            pdfContainer.stop(true, true).slideUp('slow').css('display', 'none');
-            $(this).removeClass('open');
-        } else {
+        // Kiểm tra trạng thái hiển thị hiện tại
+        if (pdfContainer.css('display') === 'none') {
             pdfContainer.stop(true, true).slideDown('slow').css('display', 'block');
             $(this).addClass('open');
+        } else {
+            pdfContainer.stop(true, true).slideUp('slow', function () {
+                $(this).css('display', 'none');
+            });
+            $(this).removeClass('open');
         }
     });
 });
+
 
 })();
