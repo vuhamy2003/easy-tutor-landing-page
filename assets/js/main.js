@@ -287,14 +287,22 @@
     });
   }
   
-  $(document).ready(function() {
-    $('.toggle-pdf').click(function() {
+$(document).ready(function() {
+    $('.toggle-pdf').click(function(event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ a (nếu có)
+
         var pdfContainer = $(this).next('.pdf-container');
-        $(this).toggleClass('open'); // Thêm class khi click để xoay mũi tên
-        if (pdfContainer.is(':hidden')) {
+
+        // Kiểm tra xem có đang mở hay không
+        if (!pdfContainer.is(':visible')) {
+            $('.pdf-container').slideUp('slow'); // Đóng tất cả các PDF khác trước khi mở
+            $('.toggle-pdf').removeClass('open'); // Loại bỏ class 'open' khỏi tất cả các nút
+
             pdfContainer.slideDown('slow');
+            $(this).addClass('open'); // Thêm class cho nút đang mở
         } else {
             pdfContainer.slideUp('slow');
+            $(this).removeClass('open'); // Loại bỏ class khi đóng
         }
     });
 });
