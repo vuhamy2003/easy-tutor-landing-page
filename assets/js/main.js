@@ -287,26 +287,16 @@
     });
   }
   
-$(document).ready(function () {
-    $('.toggle-pdf').click(function (event) {
-        event.preventDefault();
+  $(document).ready(function() {
+    $('.toggle-pdf').click(function() {
         var pdfContainer = $(this).next('.pdf-container');
-
-        if (!pdfContainer.is(':visible')) {
-            $('.pdf-container').slideUp('slow');
-            $('.toggle-pdf').removeClass('open');
-
-            setTimeout(() => {
-                pdfContainer.stop(true, true).slideDown('slow');
-                $(this).addClass('open');
-            }, 50); // Delay ngắn để tránh bị đóng ngay lập tức
+        $(this).toggleClass('open'); // Thêm class khi click để xoay mũi tên
+        if (pdfContainer.is(':hidden')) {
+            pdfContainer.slideDown('slow');
         } else {
-            pdfContainer.stop(true, true).slideUp('slow');
-            $(this).removeClass('open');
+            pdfContainer.slideUp('slow');
         }
     });
 });
-
-
 
 })();
