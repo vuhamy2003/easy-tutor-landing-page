@@ -1765,7 +1765,7 @@ section,
 }
 
 .pdf-container {
-  display: block; /* Ẩn PDF ban đầu */
+  display: none; /* Ẩn PDF ban đầu */
   margin: 5px;
 }
 
