@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>App Easy Tutor</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon1.png" rel="icon">
+  <link href="assets/img/favicon1.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..............." crossorigin="anonymous" />
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo1.png" alt="">
+        <!-- <h1 class="sitename">Easy Tutor</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Trang chủ</a></li>
+          <li><a href="index.html#about">Về chúng tôi</a></li>
+          <li><a href="index.html#services">Dịch vụ</a></li>
+          <li><a href="index.html#testimonials">Đánh giá</a></li>
+          <li><a href="index.html#pricing">Tải ngay</a></li>
+          <li class="dropdown"><a href="service-details.html#tutor" class="active"><span>App Easy Tutor</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="service-details.html#tutor">Trở thành gia sư</a></li>
+              <li><a href="service-details.html#client">Tìm gia sư</a></li>
+              <li><a href="service-details.html#rules">Nội quy và hợp đồng</a></li>
+              <li><a href="service-details.html#terms">Điều khoản sử dụng</a></li>
+              <li><a href="service-details.html#privacy">Chính sách bảo mật</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Liên hệ</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title accent-background">
+      <div class="container position-relative">
+        <h1>App Easy Tutor</h1>
+        <p>Hướng dẫn sử dụng app, các nội quy, điều khoản và chính sách của app</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-list">
+              <a href="#tutor" class="active" onclick="showSection('tutor')">Trở thành gia sư</a>
+              <a href="#client" onclick="showSection('client')">Tìm kiếm gia sư</a>
+              <a href="#rules" onclick="showSection('rules')">Nội quy và hợp đồng</a>
+              <a href="#terms" onclick="showSection('terms')">Điều khoản sử dụng</a>
+              <a href="#privacy" onclick="showSection('privacy')">Chính sách bảo mật</a>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div id="tutor" class="service-detail-section active">
+              <h2><strong>Trở thành gia sư</strong></h2>
+              <p>Thông tin về việc trở thành gia sư...</p>
+              <img src="assets/img/Trở thành gia sư.gif" alt="" class="img-fluid services-img">
+            </div>
+            <div id="client" class="service-detail-section">
+              <h2><strong>Tìm kiếm gia sư</strong></h2>
+              <p>Thông tin về tìm kiếm gia sư...</p>
+              <img src="assets/img/Tìm gia sư.gif" alt="" class="img-fluid services-img">
+            </div>
+
+            <div id="rules" class="service-detail-section">
+              <h2><strong>Nội quy và hợp đồng</strong></h3>
+              <p>Kích vào tiêu đề để hiển thị tài liệu</p>
+              <div class="bai1">
+                <h3 class="toggle-pdf">Quy định chung <i class="fas fa-chevron-down"></i></h3>
+                <div class="pdf-container">
+                    <iframe src="/assets/img/Quy định chung.pdf" frameborder="0"></iframe>
+                </div>
+              </div>
+              <div class="bai1">
+                <h3 class="toggle-pdf">Hợp đồng dạy thử <i class="fas fa-chevron-down"></i></h3>
+                <div class="pdf-container">
+                    <iframe src="/assets/img/HĐ dạy thử.pdf" frameborder="0"></iframe>
+                </div>
+              </div>
+              <div class="bai1">
+                <h3 class="toggle-pdf">Hợp đồng nhận lớp<i class="fas fa-chevron-down"></i></h3>
+                <div class="pdf-container">
+                    <iframe src="/assets/img/HĐ nhận lớp.pdf" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- /Terms Class-->
+            <div id="terms" class="service-detail-section">
+              <h2><strong>Điều khoản sử dụng</strong></h2>
+              <img src="assets/img/terms.png" alt="" class="img-fluid services-img">
+              
+
+              <p>Chào mừng bạn đến với <strong>Easy Tutor</strong>! Điều khoản sử dụng này (gọi tắt là "Điều Khoản")
+                quy định việc sử dụng dịch vụ và nội dung của chúng tôi. Bằng việc truy cập và sử dụng dịch vụ của chúng
+                tôi, bạn đồng ý với tất cả các điều khoản được nêu dưới đây.</p>
+
+              <h4>1. Quyền và Trách Nhiệm của Người Dùng</h4>
+              <p>- Bạn cam kết sử dụng dịch vụ một cách hợp pháp và không vi phạm các quy định của pháp luật hiện hành.
+              </p>
+              <p>- Bạn không được phép xâm phạm quyền lợi của bất kỳ người dùng khác hoặc ngừng cung cấp dịch vụ mà
+                chúng tôi cung cấp.</p>
+              <p>- Bạn phải chịu trách nhiệm đối với mọi hành động của mình khi sử dụng dịch vụ.</p>
+
+              <h4>2. Quyền Sở Hữu và Bản Quyền</h4>
+              <p>Tất cả nội dung và tài liệu có trên trang web này, bao gồm nhưng không giới hạn, văn bản, hình ảnh,
+                biểu tượng, logo, phần mềm, và các tài liệu khác, đều thuộc sở hữu của <strong>Easy Tutor</strong>
+                hoặc các đối tác của chúng tôi và được bảo vệ bởi các quyền sở hữu trí tuệ.</p>
+
+              <h4>3. Đảm Bảo và Giới Hạn Trách Nhiệm</h4>
+              <p>Chúng tôi không đảm bảo rằng dịch vụ sẽ luôn hoạt động liên tục hoặc không có lỗi. Trong trường hợp xảy
+                ra sự cố ngoài ý muốn, chúng tôi sẽ cố gắng khôi phục dịch vụ trong thời gian sớm nhất có thể.</p>
+              <p>Chúng tôi không chịu trách nhiệm đối với bất kỳ thiệt hại, mất mát nào mà bạn có thể gặp phải khi sử
+                dụng dịch vụ của chúng tôi, trừ trường hợp do sự vi phạm nghiêm trọng của chúng tôi gây ra.</p>
+
+              <h4>4. Thay Đổi Điều Khoản</h4>
+              <p>Chúng tôi có quyền thay đổi, sửa đổi hoặc cập nhật Điều Khoản này vào bất kỳ thời điểm nào. Những thay
+                đổi sẽ có hiệu lực ngay khi được đăng tải trên trang web. Bạn nên kiểm tra thường xuyên để cập nhật các
+                thay đổi.</p>
+
+              <h4>5. Chấm Dứt Quyền Sử Dụng</h4>
+              <p>Chúng tôi có quyền chấm dứt hoặc đình chỉ quyền truy cập vào dịch vụ của bạn bất kỳ lúc nào, nếu bạn vi
+                phạm Điều Khoản này hoặc có hành vi xâm phạm quyền lợi của người khác.</p>
+            </div><!-- /End Terms Class-->
+
+            <!-- /Privacy Class-->
+            <div id="privacy" class="service-detail-section">
+              <h2><strong>Chính sách bảo mật</strong></h2>
+              <img src="assets/img/privacy.png" alt="" class="img-fluid services-img">
+              
+              <h4>1. Giới thiệu</h4>
+              <p>Chào mừng bạn đến với ứng dụng Easy Tutor! Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin cá nhân của người dùng. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng, chia sẻ và bảo vệ dữ liệu của bạn khi bạn sử dụng dịch vụ của chúng tôi.</p>
+              <p>Việc sử dụng Easy Tutor đồng nghĩa với việc bạn đồng ý với các điều khoản trong chính sách bảo mật này. Nếu bạn không đồng ý với bất kỳ điều khoản nào, vui lòng ngừng sử dụng dịch vụ của chúng tôi.</p>
+            
+              <h4>2. Thông tin chúng tôi thu thập</h4>
+              <p>Chúng tôi thu thập thông tin từ người dùng bao gồm:</p>
+              <ul>
+                <li><b>Thông tin cá nhân: </b> Họ và tên, số điện thoại, email, địa chỉ, ảnh đại diện.</li>
+                <li><b>Thông tin tài khoản: </b> Tên đăng nhập, mật khẩu.</li>
+                <li><b>Thông tin bổ sung: </b> Chứng chỉ, kinh nghiệm giảng dạy (đối với gia sư), thông tin thanh toán (nếu có).</li>
+              </ul>
+            
+              <h4>3. Mục đích sử dụng thông tin</h4>
+              <p>Chúng tôi sử dụng thông tin cá nhân của bạn để:</p>
+              <ul>
+                <li>Cung cấp và duy trì dịch vụ kết nối phụ huynh và gia sư.</li>
+                <li>Xác thực tài khoản, bảo mật dữ liệu người dùng.</li>
+                <li>Cải thiện trải nghiệm và tối ưu hóa ứng dụng.</li>
+                <li>Quản lý giao dịch, hợp đồng, lịch sử giảng dạy.</li>
+                <li>XHỗ trợ khách hàng, xử lý khiếu nại, phản hồi thắc mắc.</li>
+                <li>Ngăn chặn gian lận, đảm bảo tính an toàn của hệ thống.</li>
+                <li>Gửi thông báo về cập nhật, khuyến mãi hoặc thay đổi dịch vụ.</li>
+                <li>Nghiên cứu và phát triển các tính năng mới để cải thiện chất lượng dịch vụ.</li>
+              </ul>
+            
+              <h4>4. Chia Sẻ Thông Tin</h4>
+              <p>Chúng tôi cam kết không bán, trao đổi hoặc tiết lộ thông tin cá nhân của bạn cho bên thứ ba, trừ các trường hợp sau:</p>
+              <ul>
+                <li><b>Có sự đồng ý của bạn: </b> Chúng tôi chỉ chia sẻ thông tin khi bạn cho phép.</li>
+                <li><b>Yêu cầu pháp lý: </b> Khi có yêu cầu từ cơ quan chức năng theo quy định của pháp luật.</li>
+                <li><b>Nhà cung cấp dịch vụ: </b> Chúng tôi có thể chia sẻ dữ liệu với các bên hỗ trợ thanh toán, lưu trữ, bảo mật và phân tích hệ thống.</li>
+                <li><b>Bảo vệ quyền lợi của Easy Tutor: </b> Khi cần thiết để bảo vệ quyền lợi hợp pháp, tài sản hoặc sự an toàn của Easy Tutor và người dùng.</li>
+              </ul>
+              <p>Mọi dữ liệu được chia sẻ sẽ tuân theo các biện pháp bảo mật nghiêm ngặt để đảm bảo quyền riêng tư của người dùng.</p>
+            
+              <h4>5. Bảo vệ dữ liệu</h4>
+              <p>Chúng tôi áp dụng các biện pháp bảo mật như:</p>
+              <ul>
+                <li><b>Mã hóa dữ liệu: </b> Bảo vệ dữ liệu bằng mã hóa.</li>
+                <li><b>Hạn chế truy cập: </b> Chỉ nhân viên có thẩm quyền mới có quyền truy cập thông tin quan trọng.</li>
+                <li><b>Giám sát hệ thống: </b> Theo dõi hoạt động để phát hiện và ngăn chặn các hành vi gian lận.</li>
+                <li><b>Sao lưu dữ liệu định kỳ: </b> Giúp khôi phục dữ liệu trong trường hợp mất mát hoặc sự cố.</li>
+              </ul>
+            
+              <h4>6. Quyền lợi của người dùng</h4>
+              <p>Bạn có quyền:</p>
+              <ul>
+                <li><b>Truy cập, chỉnh sửa, cập nhật thông tin cá nhân.</b></li>
+                <li><b>Yêu cầu xóa tài khoản và dữ liệu liên quan.</b></li>
+                <li><b>Từ chối nhận thông báo tiếp thị. </b></li>
+                <li><b>Kiểm soát quyền truy cập dữ liệu cá nhân của mình.</b></li>
+              </ul>
+              <p>Nếu bạn muốn thực hiện bất kỳ quyền nào, vui lòng liên hệ với chúng tôi qua email hỗ trợ.</p>
+
+              <h4>7. Lưu trữ dữ liệu</h4>
+              <p><b>Thời gian lưu trữ:</b> Chúng tôi lưu trữ dữ liệu trong thời gian bạn sử dụng dịch vụ và trong một khoảng thời gian hợp lý sau đó để tuân thủ quy định pháp luật.</p>
+              <p><b>Xóa dữ liệu:</b> Nếu bạn yêu cầu xóa tài khoản, dữ liệu sẽ bị xóa vĩnh viễn hoặc ẩn đi để đảm bảo tuân thủ luật bảo vệ dữ liệu.</p>
+
+              <h4>8. Chính sách về độ tuổi</h4>
+              <p>Dịch vụ của chúng tôi không dành cho trẻ em và người dùng dưới 18 tuổi. Nếu phát hiện tài khoản thuộc về người dưới độ tuổi này, chúng tôi sẽ xóa tài khoản ngay lập tức.</p>
+
+              <h4>10. Liên hệ</h4>
+              <p>Chúng tôi có thể cập nhật chính sách bảo mật theo thời gian. Khi có thay đổi quan trọng, chúng tôi sẽ thông báo qua email. Việc tiếp tục sử dụng dịch vụ sau khi chính sách được cập nhật có nghĩa là bạn đồng ý với các thay đổi đó.</p>
+              <p>Nếu có bất kỳ câu hỏi nào về chính sách bảo mật, vui lòng liên hệ với chúng tôi qua:</p>
+              <ul>
+                <li><b>Email:    </b> contact@easytutor.com</li>
+                <li><b>Điện thoại:    </b> 0987 555 666</li>
+                <li><b>Địa chỉ:</b>14 Huỳnh Thúc Kháng, Quận Ba Đình, TP Hà Nội</li>
+              </ul>
+              <p>Chúng tôi luôn sẵn sàng hỗ trợ và giải đáp mọi thắc mắc của bạn để đảm bảo trải nghiệm sử dụng dịch vụ an toàn và minh bạch nhất.</p>
+            </div><!-- /End Privacy Class-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">EASY TUTOR</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Số 14 Huỳnh Thúc Kháng</p>
+            <p>Phường Thành Công, Quận Ba Đình, Thành phố Hà Nội</p>
+            <p class="mt-3"><strong>Điện thoại:</strong> <span>+84 123456789</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Đường dẫn nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="index.html#about">Về chúng tôi</a></li>
+            <li><a href="index.html#services">Dịch vụ</a></li>
+            <li><a href="index.html#testimonials">Đánh giá</a></li>
+            <li><a href="index.html#pricing">Tải xuống</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>App</h4>
+          <ul>
+            <li><a href="service-details.html#tutor">Tìm gia sư</a></li>
+            <li><a href="service-details.html#client">Trở thành gia sư</a></li>
+            <li><a href="service-details.html#rules">Nội quy, biểu mẫu, hợp đồng</a></li>
+            <li><a href="service-details.html#terms">Điều khoản sử dụng</a></li>
+            <li><a href="service-details.html#privacy">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Nhận thông báo từ chúng tôi</h4>
+          <p>Subscribe để nhận những cập nhật, thông báo và ưu đãi mới về sản phẩm và dịch vụ!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Đăng ký của bạn đã gửi. Chúng tôi cảm ơn!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Easy Tutor</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
