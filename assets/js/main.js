@@ -287,24 +287,28 @@
     });
   }
   
-$(document).ready(function() {
-    $('.toggle-pdf').click(function(event) {
-        event.preventDefault(); // Ngăn hành vi mặc định
+$(document).ready(function () {
+    $('.toggle-pdf').click(function (event) {
+        event.preventDefault(); // Ngăn hành vi mặc định của thẻ <a>
 
         var pdfContainer = $(this).next('.pdf-container');
 
-        // Kiểm tra nếu nó đang ẩn thì hiển thị, ngược lại thì ẩn đi
-        if (!pdfContainer.is(':visible')) {
-            $('.pdf-container').slideUp('slow'); // Đóng tất cả trước khi mở
-            $('.toggle-pdf').removeClass('open'); // Xóa class của tất cả các nút
+        console.log('Before click:', pdfContainer.is(':visible')); // Kiểm tra trạng thái trước khi click
 
-            pdfContainer.stop(true, true).slideDown('slow'); // Ngăn chặn animation cũ trước khi mở
+        if (!pdfContainer.is(':visible')) {
+            $('.pdf-container').slideUp('slow'); // Đóng tất cả các container khác trước
+            $('.toggle-pdf').removeClass('open'); // Xóa trạng thái "mở" của tất cả các nút
+            
+            pdfContainer.stop(true, true).slideDown('slow'); // Ngăn chồng animation và mở lên
             $(this).addClass('open');
         } else {
-            pdfContainer.stop(true, true).slideUp('slow'); // Ngăn chồng animation
+            pdfContainer.stop(true, true).slideUp('slow');
             $(this).removeClass('open');
         }
+
+        console.log('After click:', pdfContainer.is(':visible')); // Kiểm tra trạng thái sau khi click
     });
 });
+
 
 })();
