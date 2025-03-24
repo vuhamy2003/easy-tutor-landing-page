@@ -1766,7 +1766,6 @@ section,
 
 .pdf-container {
    /* Ẩn PDF ban đầu */
-  display: block !important;
   margin: 5px;
 }
 
